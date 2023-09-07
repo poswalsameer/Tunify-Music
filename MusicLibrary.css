@@ -1,0 +1,227 @@
+.body{
+    background-color: rgb(41, 38, 38);
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(59, 180, 46);
+    /* position: absolute; */
+}
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+    margin-left: -1.5rem;
+    margin-top: 0.2rem;
+    border-radius: 50px;
+}
+
+.home{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.topCharts{
+    padding: 1rem;
+}
+.fav{
+    padding: 1rem;
+}
+.download{
+    padding: 1rem;
+}
+
+.text{
+    /* display: flex; */
+    /* align-items: right; */
+    float: right;
+    margin-right: 6rem;
+    margin-top: -3.3rem;
+    
+}
+
+.btn{
+    float: right;
+    margin-right: 3rem;
+    margin-top: -3.3rem;
+    border: 2px solid rgb(62, 136, 63);
+}
+
+.btn:hover{
+    /* border: 4px solid black; */
+    color: rgb(59, 180, 46);
+}
+
+.homeBody{
+
+    /* display: flex; */
+    margin-top: 12rem;
+    margin-left: 7rem;
+    width: 40vw;
+}
+
+.para{
+    color: white;
+    font-size: 2rem;
+}
+
+.join{
+    height: 3rem;
+    width: 8rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    border: 3px solid rgb(59, 180, 46);
+    border-radius: 15px ;
+    font-weight: bold;
+}
+
+.free{
+    margin-left: 6rem;
+    height: 3rem;
+    width:8rem;
+    margin-top: 2rem;
+    border-radius: 15px ;
+    border: 3px solid rgb(59, 180, 46);
+    font-weight: bold;
+}
+
+.chartBody{
+    /* margin-top: 24rem; */
+    color: white;
+}
+
+.heading{
+    font-size: 4rem;
+    color: rgb(59, 180, 46) ;
+    margin-left: 3rem;
+    margin-top: 18rem;
+    /* font: small-caps; */
+}
+
+.chartBody{
+    display: grid;
+    border: 2px solid rgb(59, 180, 46);
+    border-radius: 10px;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+
+    column-gap: 3rem;
+    row-gap: 3rem;
+
+    /* column-gap: 3rem; */
+}
+
+/* .song{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    
+} */
+
+.song p{
+    text-align: center;
+    margin-top: 5rem;
+    float: left;
+    padding-left: 3rem;
+}
+
+.song img{
+    height: 10rem;
+    width: 10rem;
+    float: left;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.favHead{
+    font-size: 4rem;
+    color: rgb(59, 180, 46) ;
+    margin-left: 3rem;
+    margin-top: 18rem;
+}
+
+
+.singer img{
+    height: 9rem;
+    width: 9rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.singer p{
+    color: white;
+    font-size: 2rem;
+    float: right;
+    margin-right: 15rem;
+    margin-top: 4.5rem;
+    /* text-align: center; */
+    /* margin-bottom: 3rem; */
+    /* margin-top: -8rem; */
+    /* padding-left: 3rem; */
+}
+
+.favArtist{
+    display: grid;
+    border: 2px solid rgb(59, 180, 46);
+    border-radius: 10px;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+
+    column-gap: 4rem;
+    row-gap: 5rem;
+}
+
+.favBody{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 7rem 0;
+    /* margin-top: 8rem; */
+    /* border: 2px solid white; */
+}
+
+.downloadHead{
+    font-size: 4rem;
+    color: rgb(59, 180, 46) ;
+    margin-left: 3rem;
+    margin-top: 18rem;
+}
+
+.downloads{
+    border: 2px solid rgb(59, 180, 46);
+}
+
+.downloadBody{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 7rem 0;
+}
+
+.userIcon{
+    /* margin-left: 25rem; */
+    float: right;
+    margin-right: 1.3rem;
+    margin-top: -3.2rem;
+    color: white;
+}
+
+.search{
+    margin-right: 1rem;
+}
+
+/* .searchButton{
+    margin-left: 1rem;
+} */
+
+
+
