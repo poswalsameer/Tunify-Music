@@ -120,6 +120,7 @@
     color: rgb(59, 180, 46) ;
     margin-left: 3rem;
     margin-top: 18rem;
+    margin-bottom: 3rem;
     /* font: small-caps; */
 }
 
@@ -136,6 +137,8 @@
 
     margin-left: 1rem;
     margin-right: 1rem;
+
+    padding: 2rem 2rem;
 
     /* column-gap: 3rem; */
 }
@@ -164,7 +167,8 @@
     margin-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
+    border-radius: 50%;
+
 }
 
 .favHead{
@@ -172,6 +176,7 @@
     color: rgb(59, 180, 46) ;
     margin-left: 3rem;
     margin-top: 18rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -196,6 +201,10 @@
     /* padding-left: 3rem; */
 }
 
+.artistName{
+    padding-left: 2rem;
+}
+
 .favArtist{
     display: grid;
     border: 2px solid rgb(59, 180, 46);
@@ -209,6 +218,9 @@
 
     margin-left: 1rem;
     margin-right: 1rem;
+
+    padding: 2rem 2rem;
+
 }
 
 .favBody{
@@ -225,10 +237,14 @@
     color: rgb(59, 180, 46) ;
     margin-left: 3rem;
     margin-top: 18rem;
+    margin-bottom: 3rem;
 }
 
 .downloads{
     border: 2px solid rgb(59, 180, 46);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
 }
 
 .downloadBody{
