@@ -1,5 +1,8 @@
 .body{
-    background-color: rgb(41, 38, 38);
+    /* background-color: rgb(41, 38, 38); */
+    /* background-image: radial-gradient(grey, rgb(35, 31, 31), black); */
+    /* position: sticky; */
+    background-color: black;
 }
 
 .menu ul{
@@ -21,14 +24,37 @@
     padding: 1rem;
     padding-left: 2rem;
 }
+
+.home:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
 .topCharts{
     padding: 1rem;
 }
+
+.topCharts:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
 .fav{
     padding: 1rem;
 }
+
+.fav:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
 .download{
     padding: 1rem;
+}
+
+.download:hover{
+    transform: scale(1.1);
+    color: white;
 }
 
 .text{
@@ -160,6 +186,11 @@
     padding-left: 3rem;
 }
 
+.song p:hover{
+    transform: scale(1.3);
+    color: rgb(59, 180, 46);
+}
+
 .song img{
     height: 10rem;
     width: 10rem;
@@ -178,6 +209,7 @@
     margin-top: 18rem;
     margin-bottom: 3rem;
 }
+
 
 
 .singer img{
@@ -199,6 +231,11 @@
     /* margin-bottom: 3rem; */
     /* margin-top: -8rem; */
     /* padding-left: 3rem; */
+}
+
+.singer p:hover{
+    transform: scale(1.3);
+    color: rgb(59, 180, 46);
 }
 
 .artistName{
