@@ -179,16 +179,34 @@
     
 } */
 
+.song{
+    border: 2px solid transparent;
+}
+
+.song:hover{
+    background-color: grey;
+    border-radius: 10px;
+}
+
 .song p{
     text-align: center;
     margin-top: 5rem;
+    margin-left: 5rem;
     float: left;
     padding-left: 3rem;
+    /* padding: 4rem 3rem;
+    border: 1px solid transparent;
+    border-radius: 20px; */
 }
+
+
 
 .song p:hover{
     transform: scale(1.3);
-    color: rgb(59, 180, 46);
+    /* color: rgb(59, 180, 46); */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .song img{
@@ -198,7 +216,7 @@
     margin-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-radius: 50%;
+    border-radius: 60%;
 
 }
 
@@ -210,7 +228,15 @@
     margin-bottom: 3rem;
 }
 
+.singer{
+    border: 2px solid transparent;
+}
 
+.singer:hover{
+    background-color: grey;
+    border-radius: 10px;
+    
+}
 
 .singer img{
     height: 9rem;
@@ -223,7 +249,7 @@
 
 .singer p{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: right;
     margin-right: 15rem;
     margin-top: 4.5rem;
@@ -234,9 +260,12 @@
 }
 
 .singer p:hover{
-    transform: scale(1.3);
-    color: rgb(59, 180, 46);
-}
+    transform: scale(1.3); 
+    /* color: rgb(59, 180, 46); */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+ }
 
 .artistName{
     padding-left: 2rem;
