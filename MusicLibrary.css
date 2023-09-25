@@ -370,6 +370,8 @@
     border: 1px solid black;
     border-radius: 30px;
     transform: scale(0.9);
+    height: 2rem;
+    margin-top: -4.5rem;
     /* margin-top: 2rem; */
 }
 
