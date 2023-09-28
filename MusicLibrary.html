@@ -97,18 +97,25 @@
 
         <!-- This is the footer -->
         <div class="buttons">
-            <div class="backward"><i class="fa-solid fa-backward"></i></div>
-            <div class="play"><i class="fa-solid fa-play"></i></div>
-            <div class="forward"><i class="fa-solid fa-forward"></i></div>
+
+            <!-- backward button -->
+            <div class="backward"><button class="musicBtn"><i class="fa-solid fa-backward"></i></button></div>
+
+            <!-- play button -->
+            <div class="play"><button class="musicBtn" id="playBtn"><img src="play.png" alt="play" id="play"></button></div>
+
+            <!-- forward button -->
+            <div class="forward"><button class="musicBtn"><i class="fa-solid fa-forward"></i></button></div>
         </div>
 
         <div class="audioBar">
-            <input type="range" name="Audio" id="bar"class="progress" min="0" max="100">
+            <input type="range" name="Audio" id="bar"class="progress"  value="0" min="0" max="100">
         </div>
 
     </footer>
 
 </body>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/f4b520afae.js" crossorigin="anonymous"></script>
 </html>
