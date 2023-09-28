@@ -5,6 +5,7 @@
     background-size: 100% 100%;
     background-attachment: fixed;
     opacity: 1.2;
+    /* overflow: hidden; */
 }
 
 .menu{
@@ -15,9 +16,10 @@
 .menu ul{
     display: flex;
     list-style-type: none;
-    background-color: rgb(59, 180, 46);
+    background-color: rgb(59, 180, 46, 0.659);
     /* position: absolute; */
     padding: 1rem 0;
+    width: 99vw;
 }
 
 .logo{
@@ -297,9 +299,11 @@
     cursor: pointer;
  }
 
-/* .artistName{
-    padding-left: 2rem;
-} */
+.artistName{
+    /* padding-left: 2rem; */
+    text-decoration: none;
+    
+}
 
 .favArtist{
     display: grid;
@@ -388,6 +392,84 @@
     margin-left: 1rem;
 } */
 
+.player{
+    height: 90px;
+    width: 99vw;
 
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    background-color: rgba(59, 180, 46, 0.659);
+
+    margin-top: 10rem;
+
+    bottom: 0;
+    position: sticky;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backward{
+    margin: 0 1rem;
+    transform: scale(1.5);
+    margin-top: 1.5rem;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+}
+
+.backward:hover{
+    transform: scale(1.8);
+    color: white;
+    cursor: pointer;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.play{
+    margin: 0 1rem;
+    transform: scale(1.5);
+    margin-top: 1.5rem;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+}
+
+.play:hover{
+    transform: scale(1.8);
+    color: white;
+    cursor: pointer;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.forward{
+    margin: 0 1rem;
+    transform: scale(1.5);
+    margin-top: 1.5rem;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+}
+
+.forward:hover{
+    transform: scale(1.8);
+    color: white;
+    cursor: pointer;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.audioBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    margin-top: 0.8rem;
+    width: 90vw;
+}
 
 
