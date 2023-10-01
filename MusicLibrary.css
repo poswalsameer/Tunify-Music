@@ -233,6 +233,7 @@
 }
 
 .song:hover{
+    cursor: pointer;
     background-color: rgba(240, 248, 255, 0.27);
     border-radius: 10px;
 }
@@ -287,6 +288,7 @@
 }
 
 .singer:hover{
+    cursor: pointer;
     background-color: rgba(240, 248, 255, 0.27);
     border-radius: 10px;
     
