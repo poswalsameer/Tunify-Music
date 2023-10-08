@@ -444,7 +444,7 @@
 .backward{
     margin: 0 0.7rem;
     transform: scale(1.2);
-    margin-top: 1.3rem;
+    margin-top: -5.8rem;
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: white;
 }
@@ -460,7 +460,7 @@
 .play img{
     height: 1.8rem;
     width: 1.3rem;
-    margin-top: 1.2rem;
+    margin-top: -5.8rem;
 }
 
 .play img:hover{
@@ -470,7 +470,7 @@
 .forward{
     margin: 0 0.7rem;
     transform: scale(1.2);
-    margin-top: 1.3rem;
+    margin-top: -5.8rem;
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: white;
 }
@@ -495,9 +495,18 @@
     align-items: center;
 }
 .progress{
-    margin-top: 0.8rem;
+    margin-top: -2.2rem;
     width: 90vw;
     cursor: pointer;
+}
+
+.songName{
+
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left: 20rem;
+    margin-top: 0.7rem;
+    display: inline-block;
 }
 
 
