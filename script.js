@@ -27,6 +27,10 @@ let pind = document.getElementById('pind');
 let levels = document.getElementById('levels');
 let obsessed = document.getElementById('obsessed');
 
+let songImage = document.getElementById('songImage');
+let songName = document.getElementById('songName');
+let singerName = document.getElementById('singerName');
+
 
 //Playing and pausing the song
 playBtn.addEventListener('click', ()=>{
@@ -45,7 +49,11 @@ cheques.addEventListener('click', ()=> {
     music.src = 'Cheques.mp3';
     music.play();
     document.getElementById('play').src = 'pause.png'; 
-    // document.getElementById('player').style.backgroundImage = "url('cheques.jpg')";
+    
+    //changing the image, song name according to the song
+    songImage.src = 'cheques.jpg';
+    songName.innerText = 'Cheques';
+    singerName.innerText = 'Shubh';
     
 
 })
@@ -55,7 +63,10 @@ og.addEventListener('click', ()=> {
     music.src = 'OG.mp3';
     music.play();
     document.getElementById('play').src = 'pause.png'; 
-    // document.getElementById('player').style.backgroundImage = "url('Og.jpg')";
+    
+    songImage.src = 'Og.jpg';
+    songName.innerText = 'OG';
+    singerName.innerText = 'Shubh';
 
 })
 
@@ -64,7 +75,10 @@ wakeUp.addEventListener('click', ()=> {
     music.src = 'Wake Up.mp3';
     music.play();
     document.getElementById('play').src = 'pause.png';
-    // document.getElementById('player').style.backgroundImage = "url('wakeUp.jpg')"; 
+   
+    songImage.src = 'wakeUp.jpg';
+    songName.innerText = 'Wake Up';
+    singerName.innerText = 'Gurinder Gill';
 
 })
 
@@ -73,7 +87,10 @@ pind.addEventListener('click', ()=> {
     music.src = 'Pind Da Riwaaz.mp3';
     music.play();
     document.getElementById('play').src = 'pause.png';
-    // document.getElementById('player').style.backgroundImage = "url('pindDaRiwaaz.jpg')"; 
+    songImage.src = 'pindDaRiwaaz.jpg';
+    songName.innerText = 'Pind Da Riwaaz';
+    singerName.innerText = 'Wazir Patar';
+    
 
 })
 
@@ -82,7 +99,9 @@ levels.addEventListener('click', ()=> {
     music.src = 'Levels (MrJatt.Im).mp3';
     music.play();
     document.getElementById('play').src = 'pause.png';
-    // document.getElementById('player').style.backgroundImage = "url('levels.jpg')"; 
+    songImage.src = 'levels.jpg';
+    songName.innerText = 'Levels';
+    singerName.innerText = 'Sidhu Moose Wala';
 
 })
 
@@ -91,9 +110,13 @@ obsessed.addEventListener('click', ()=> {
     music.src = 'Obsessed - 320Kbps-(Mr-Jat.in).mp3';
     music.play();
     document.getElementById('play').src = 'pause.png';
-    // document.getElementById('player').style.backgroundImage = "url('obsessed.jpg')"; 
+    songImage.src = 'obsessed.jpg';
+    songName.innerText = 'Obsessed';
+    singerName.innerText = 'Riar Saab';
 
 })
+
+
 
 music.addEventListener('timeupdate', ()=> {
     
