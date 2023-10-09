@@ -31,6 +31,24 @@ let songImage = document.getElementById('songImage');
 let songName = document.getElementById('songName');
 let singerName = document.getElementById('singerName');
 
+let up = document.getElementById('up');
+let down = document.getElementById('down');
+
+up.addEventListener('click', ()=>{
+
+    if( !music.paused && music.volume < 1 ){
+        music.volume += 0.1;
+    }
+
+})
+
+down.addEventListener('click', ()=>{
+
+    if( !music.paused && music.volume > 0 ){
+        music.volume -= 0.1;
+    }
+
+})
 
 //Playing and pausing the song
 playBtn.addEventListener('click', ()=>{

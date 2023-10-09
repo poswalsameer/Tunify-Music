@@ -552,4 +552,39 @@ ul a:hover{
     margin-top: 6rem;
 }
 
+.up{
+    position: absolute;
+    top: 32%;
+    right: 2%;
+    height: 35px;
+    width: 35px;
+}
+
+.up:hover{
+    cursor: pointer;
+}
+
+.down{
+    position: absolute;
+    top: 32%;
+    right: 11%;
+    height: 35px;
+    width: 35px;
+}
+
+.down:hover{
+    cursor: pointer;
+}
+
+.volume{
+    position: absolute;
+    font-size: 1.3rem;
+    right: 5.2%;
+    top: 32%;
+    font-weight: bolder;
+}
+
+.volume:hover{
+    cursor: pointer;
+}
 
