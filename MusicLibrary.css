@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+    /* background-color: black; */
     opacity: 1.2;
     /* overflow: hidden; */
 }
@@ -524,6 +525,15 @@ ul a:hover{
     margin-top: 0.8rem;
     width: 60vw;
     cursor: pointer;
+    /* color: black; */
+}
+
+input[type="range"]{
+
+    accent-color: black;
+    background: transparent;
+    /* border: 2px solid rgb(225, 6, 6); */
+
 }
 
 .songImage{
