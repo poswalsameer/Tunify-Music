@@ -34,6 +34,27 @@ let singerName = document.getElementById('singerName');
 let up = document.getElementById('up');
 let down = document.getElementById('down');
 
+let userIcon = document.getElementById('userIcon');
+let userLogin = document.getElementById('userLogin');
+let cross = document.getElementById('cross');
+
+cross.addEventListener('click', ()=>{
+
+    userLogin.style.transition = 'position 2s ease-in-out';
+    userLogin.style.right = '-30%';
+
+})
+
+userIcon.addEventListener('click', ()=>{
+
+    // userLogin.style.position = 'absolute';
+    // userLogin.style.right = '1%';
+    userLogin.style.transition = 'position 2s ease-in-out';
+    userLogin.style.right = '1%';
+    console.log("Fired");
+
+})
+
 up.addEventListener('click', ()=>{
 
     if( !music.paused && music.volume < 1 ){
@@ -152,3 +173,5 @@ audioProgress.addEventListener('change', ()=> {
     music.currentTime = (bar.value*music.duration)/100;
 
 })
+
+
