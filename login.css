@@ -67,8 +67,49 @@ body{
 
 }
 
+
+.mail img{
+    position: absolute;
+    top: 48%;
+    /* margin-top: 1rem; */
+    height: 53px;
+    width: 53px;
+}
+
 .mail input{
-    margin-left: 2.35rem;
+    margin-bottom: 5rem;
+    margin-left: 6rem;
+    height: 2rem;
+    width: 21rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 2rem;
+}
+
+input:active{
+    background: none;
+}
+
+.pass img{
+    position: absolute;
+    top: 64%;
+    left: 36%;
+    height: 53px;
+    width: 53px;
+}
+
+.pass input{
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+    height: 2rem;
+    width: 21rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 2rem;
 }
 
 .container label{
@@ -82,4 +123,17 @@ body{
 
     height: 2rem;
     width: 5rem;
+    position: absolute;
+    left: 48%;
+    top: 80%;
+    border: 2px solid white;
+    background-color: rgb(36, 85, 36);
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
