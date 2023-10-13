@@ -16,7 +16,7 @@
 
         <div class="container">
 
-            <form action="/">
+            <form>
 
                 <div class="mail">
                     <!-- <label for="email">Enter your Email: </label> -->
@@ -30,10 +30,19 @@
                     <input type="password" name="password" id="password">
                 </div>
 
-                <button class="btn"> LOGIN </button>
+                
             </form>
+
+            <button class="btn" onclick="logged()"> LOGIN </button>
 
         </div>
 
+        <script>
+
+            function logged(){
+                window.location.href = 'MusicLibrary.html';
+            }
+
+        </script>
 </body>
 </html>

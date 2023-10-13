@@ -86,6 +86,7 @@ body{
     border-bottom: 2px solid white;
     outline: none;
     font-size: 2rem;
+    /* padding: 2px 0; */
 }
 
 input:active{
