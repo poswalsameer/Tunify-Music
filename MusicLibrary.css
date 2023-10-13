@@ -584,6 +584,7 @@ input[type="range"]{
 
 .up:hover{
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .down{
@@ -596,6 +597,7 @@ input[type="range"]{
 
 .down:hover{
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .volume{
