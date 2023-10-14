@@ -630,8 +630,8 @@ input[type="range"]{
     border: 2px solid white;
     border-radius: 10px;
 
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
 
     display: flex;
     flex-direction: column;
@@ -640,31 +640,28 @@ input[type="range"]{
 
 }
 
-.mail label{
-    padding: 5px;
-    font-weight: bolder;
-}
-
-.mail{
+.userInfo{
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    
+}
+
+.userInfo p{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 46%;
+    right: 14%;
 
 }
 
-.password{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.password label{
-    padding: 1px;
-    font-weight: bolder;
+.userInfo img{
+    position: absolute;
+    top: 45%;
+    right: 68%;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .icon{
@@ -674,7 +671,7 @@ input[type="range"]{
     /* margin-bottom: 2rem; */
     position: absolute;
     top: 9%;
-}
+} 
 
 .icon img{
 
@@ -692,16 +689,25 @@ input[type="range"]{
 .loginBtn{
 
     position:absolute;
-    top: 79%;
+    top: 76%;
     margin-left: 20px;
+    height: 2rem;
     width: 5rem;
     border: 2px solid white;
     font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
     background-color: rgb(59, 180, 46);
+    border-radius: 10px;
     transition: position;
 
 }
 
+.loginBtn:hover{
+    border: 2px solid rgb(59, 180, 46);
+    background-color: rgb(230, 215, 215);
+    color: rgb(59, 180, 46);
+}
 .forget{
 
     position: absolute;
