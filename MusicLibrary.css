@@ -621,7 +621,9 @@ input[type="range"]{
     top: 14%;
 
     /* This is the place where the login will be before clicking the user icon */
-    right: -30%;
+    right: 2%;
+
+    opacity: 0;
 
     background-color: black;
     color: white;

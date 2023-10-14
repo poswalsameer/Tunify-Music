@@ -41,7 +41,11 @@ let cross = document.getElementById('cross');
 cross.addEventListener('click', ()=>{
 
     userLogin.style.transition = 'position 2s ease-in-out';
-    userLogin.style.right = '-30%';
+
+    // userLogin.style.right = '-30%';
+
+    //changing the opacity of logout bar to 0 on clicking the cross button
+    userLogin.style.opacity = '0';
 
 })
 
@@ -50,10 +54,15 @@ userIcon.addEventListener('click', ()=>{
     // userLogin.style.position = 'absolute';
     // userLogin.style.right = '1%';
     userLogin.style.transition = 'position 2s ease-in-out';
-    userLogin.style.right = '1%';
+
+    // userLogin.style.right = '1%';
+
+    //changing the opacity of logout bar to 1 on clicking the user Icon
+    userLogin.style.opacity = '1';
     console.log("Fired");
 
 })
+
 
 up.addEventListener('click', ()=>{
 
