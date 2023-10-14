@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 html{
     max-width: 100%;
     overflow-x: hidden;
+    
 }
 
 .body{
@@ -12,6 +16,7 @@ html{
     /* background-color: black; */
     opacity: 1.2;
     /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
