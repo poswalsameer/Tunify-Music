@@ -174,4 +174,10 @@ audioProgress.addEventListener('change', ()=> {
 
 })
 
+function logOut(){
+
+    window.location.href = 'login.html';
+
+}
+
 
