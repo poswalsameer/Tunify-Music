@@ -84,11 +84,11 @@ down.addEventListener('click', ()=>{
 playBtn.addEventListener('click', ()=>{
     if( music.paused || music.currentTime==0 ){
         music.play();
-        document.getElementById('play').src = 'pause.png';  
+        document.getElementById('playBtn').src = 'pause.png';  
     }
     else{
         music.pause();
-        document.getElementById('play').src = 'play.png';
+        document.getElementById('playBtn').src = 'play.png';
     }
 })
 
@@ -96,7 +96,7 @@ cheques.addEventListener('click', ()=> {
 
     music.src = 'Cheques.mp3';
     music.play();
-    document.getElementById('play').src = 'pause.png'; 
+    document.getElementById('playBtn').src = 'pause.png'; 
     
     //changing the image, song name according to the song
     songImage.src = 'cheques.jpg';
@@ -110,7 +110,7 @@ og.addEventListener('click', ()=> {
 
     music.src = 'OG.mp3';
     music.play();
-    document.getElementById('play').src = 'pause.png'; 
+    document.getElementById('playBtn').src = 'pause.png'; 
     
     songImage.src = 'Og.jpg';
     songName.innerText = 'OG';
@@ -122,7 +122,7 @@ wakeUp.addEventListener('click', ()=> {
 
     music.src = 'Wake Up.mp3';
     music.play();
-    document.getElementById('play').src = 'pause.png';
+    document.getElementById('playBtn').src = 'pause.png';
    
     songImage.src = 'wakeUp.jpg';
     songName.innerText = 'Wake Up';
@@ -134,7 +134,7 @@ pind.addEventListener('click', ()=> {
 
     music.src = 'Pind Da Riwaaz.mp3';
     music.play();
-    document.getElementById('play').src = 'pause.png';
+    document.getElementById('playBtn').src = 'pause.png';
     songImage.src = 'pindDaRiwaaz.jpg';
     songName.innerText = 'Pind Da Riwaaz';
     singerName.innerText = 'Wazir Patar';
@@ -146,7 +146,7 @@ levels.addEventListener('click', ()=> {
 
     music.src = 'Levels (MrJatt.Im).mp3';
     music.play();
-    document.getElementById('play').src = 'pause.png';
+    document.getElementById('playBtn').src = 'pause.png';
     songImage.src = 'levels.jpg';
     songName.innerText = 'Levels';
     singerName.innerText = 'Sidhu Moose Wala';
@@ -157,13 +157,12 @@ obsessed.addEventListener('click', ()=> {
 
     music.src = 'Obsessed - 320Kbps-(Mr-Jat.in).mp3';
     music.play();
-    document.getElementById('play').src = 'pause.png';
+    document.getElementById('playBtn').src = 'pause.png';
     songImage.src = 'obsessed.jpg';
     songName.innerText = 'Obsessed';
     singerName.innerText = 'Riar Saab';
 
 })
-
 
 
 music.addEventListener('timeupdate', ()=> {
