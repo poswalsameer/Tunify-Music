@@ -41,7 +41,10 @@ let cross = document.getElementById('cross');
 let forwardBtn = document.getElementById('forwardBtn');
 let backwardBtn = document.getElementById('backwardBtn');
 
+//this is a variable to keep the count of the current song which is playing
 let songCount = 0;
+
+// a bool check which is done if we directly play the song with clicking on the play button instead of div
 let firstPlay = false;
 
 cross.addEventListener('click', ()=>{
@@ -79,14 +82,15 @@ down.addEventListener('click', ()=>{
 
 })
 
+
+//all the code for the forward button
+
 forwardBtn.addEventListener('click', ()=>{
 
     console.log("song is running");
 
-    // || firstPlay === true
     if( songCount === 1 || firstPlay === true ){
         
-        console.log("song is running in the function");
         music.src = 'Wake up.mp3';
         music.play();
         document.getElementById('playBtn').src = 'pause.png'; 
@@ -172,7 +176,6 @@ backwardBtn.addEventListener('click', ()=>{
 
     console.log("song is running");
 
-    // || firstPlay === true
     if( songCount === 1 || firstPlay === true ){
         
         music.src = 'Obsessed - 320Kbps-(Mr-Jat.in).mp3';
@@ -202,7 +205,6 @@ backwardBtn.addEventListener('click', ()=>{
     }
     else if( songCount === 3 ){
 
-        console.log("song is running in the function");
         music.src = 'Wake up.mp3';
         music.play();
         document.getElementById('playBtn').src = 'pause.png'; 
