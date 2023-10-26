@@ -26,6 +26,8 @@ let wakeUp = document.getElementById('wakeUp');
 let pind = document.getElementById('pind');
 let levels = document.getElementById('levels');
 let obsessed = document.getElementById('obsessed');
+let excuses = document.getElementById('excuses');
+let yaari = document.getElementById('yaari');
 
 let songImage = document.getElementById('songImage');
 let songName = document.getElementById('songName');
@@ -154,6 +156,34 @@ forwardBtn.addEventListener('click', ()=>{
     }
     else if(songCount === 6 ){
         
+        music.src = 'Excuses.mp3';
+        music.play();
+        songCount = 7;
+        console.log(songCount);
+        document.getElementById('playBtn').src = 'pause.png';
+        songImage.src = 'excuses.jpg';
+        songName.innerText = 'Excuses';
+        singerName.innerText = 'AP Dhillon';
+    
+
+    }
+
+    else if(songCount === 7 ){
+        
+        music.src = 'Yaari Chandigarh Waliye.mp3';
+        music.play();
+        songCount = 8;
+        console.log(songCount);
+        document.getElementById('playBtn').src = 'pause.png';
+        songImage.src = 'yaari.jpg';
+        songName.innerText = 'Yaari Chandigarh Waliye';
+        singerName.innerText = 'Ranjit Bawa';
+    
+
+    }
+
+    else if(songCount === 8 ){
+        
         music.src = 'Cheques.mp3';
         music.play();
         songCount = 1;
@@ -168,6 +198,8 @@ forwardBtn.addEventListener('click', ()=>{
 
     }
 
+
+
 })
 
 
@@ -178,14 +210,14 @@ backwardBtn.addEventListener('click', ()=>{
 
     if( songCount === 1 || firstPlay === true ){
         
-        music.src = 'Obsessed - 320Kbps-(Mr-Jat.in).mp3';
+        music.src = 'Yaari Chandigarh Waliye.mp3';
         music.play();
-        songCount = 6;
-        
+        songCount = 8;
+        console.log(songCount);
         document.getElementById('playBtn').src = 'pause.png';
-        songImage.src = 'obsessed.jpg';
-        songName.innerText = 'Obsessed';
-        singerName.innerText = 'Riar Saab';
+        songImage.src = 'yaari.jpg';
+        songName.innerText = 'Yaari Chandigarh Waliye';
+        singerName.innerText = 'Ranjit Bawa';
 
         firstPlay = false;
     }
@@ -251,6 +283,34 @@ backwardBtn.addEventListener('click', ()=>{
         songImage.src = 'levels.jpg';
         songName.innerText = 'Levels';
         singerName.innerText = 'Sidhu Moose Wala';
+    
+
+    }
+
+    else if(songCount === 7 ){
+        
+        music.src = 'Obsessed - 320Kbps-(Mr-Jat.in).mp3';
+        music.play();
+        songCount = 6;
+        
+        document.getElementById('playBtn').src = 'pause.png';
+        songImage.src = 'obsessed.jpg';
+        songName.innerText = 'Obsessed';
+        singerName.innerText = 'Riar Saab';
+    
+
+    }
+
+    else if(songCount === 8 ){
+        
+        music.src = 'Excuses.mp3';
+        music.play();
+        songCount = 7;
+        console.log(songCount);
+        document.getElementById('playBtn').src = 'pause.png';
+        songImage.src = 'excuses.jpg';
+        songName.innerText = 'Excuses';
+        singerName.innerText = 'AP Dhillon';
     
 
     }
@@ -356,6 +416,32 @@ obsessed.addEventListener('click', ()=> {
     songImage.src = 'obsessed.jpg';
     songName.innerText = 'Obsessed';
     singerName.innerText = 'Riar Saab';
+
+})
+
+excuses.addEventListener('click', ()=> {
+
+    music.src = 'Excuses.mp3';
+    music.play();
+    songCount = 7;
+    console.log(songCount);
+    document.getElementById('playBtn').src = 'pause.png';
+    songImage.src = 'excuses.jpg';
+    songName.innerText = 'Excuses';
+    singerName.innerText = 'AP Dhillon';
+
+})
+
+yaari.addEventListener('click', ()=> {
+
+    music.src = 'Yaari Chandigarh Waliye.mp3';
+    music.play();
+    songCount = 8;
+    console.log(songCount);
+    document.getElementById('playBtn').src = 'pause.png';
+    songImage.src = 'yaari.jpg';
+    songName.innerText = 'Yaari Chandigarh Waliye';
+    singerName.innerText = 'Ranjit Bawa';
 
 })
 
