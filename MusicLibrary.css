@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-html{
+/* html{
     max-width: 100%;
     overflow-x: hidden;
     
+} */
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 .body{
@@ -34,7 +39,7 @@ html{
     background-color: rgb(52, 154, 41);
     /* position: absolute; */
     padding: 1rem 0;
-    width: 99vw;
+    width: 100vw;
 }
 
 ul a{
@@ -483,7 +488,7 @@ ul a:hover{
 
 .player{
     height: 90px;
-    width: 99vw;
+    width: 100vw;
 
     /* display: flex;
     align-items: center;
