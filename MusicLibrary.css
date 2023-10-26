@@ -31,7 +31,7 @@ html{
 .menu ul{
     display: flex;
     list-style-type: none;
-    background-color: rgb(59, 180, 46, 0.659);
+    background-color: rgb(52, 154, 41);
     /* position: absolute; */
     padding: 1rem 0;
     width: 99vw;
@@ -768,5 +768,9 @@ input[type="range"]{
     right: 3%;
 
 }
+/* 
+.yaari{
+    font-size: 12px;
+} */
 
 
