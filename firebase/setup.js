@@ -16,7 +16,7 @@
 
 import { initializeApp } from 'firebase/app';
 import {
-    getFirestore, collection, getDocs, getDoc
+    getFirestore, collection, getDocs, addDoc
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -55,5 +55,56 @@ getDocs(colRef)
   } )
   .catch( err => {
         //catch method to catch any kind of error if present in the code
-        console.log("There is some error in your code!");
+        console.error(" There is some error in your code ");
   } )
+
+  // const addDetails = document.querySelector('.login')
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+
+    const addDetails = document.getElementById('login');
+  
+    // Rest of your code...
+    addDetails.addEventListener('submit', (e) => {
+
+      // whenver we submit the form by clicking the submit button, the page gets refreshed, we don't want that to happen
+      //that's why preventDefault() method is used
+      e.preventDefault();
+  
+      addDoc(colRef,{
+  
+        Username: addDetails.username.value,
+        Password: addDetails.password.value,
+  
+      })
+      .then( () => {
+  
+        addDetails.reset();
+  
+      })
+  
+    })
+  });
+
+  // const addDetails = document.getElementById('login')
+
+  // addDetails.addEventListener('submit', (e) => {
+
+  //   // whenver we submit the form by clicking the submit button, the page gets refreshed, we don't want that to happen
+  //   //that's why preventDefault() method is used
+  //   e.preventDefault();
+
+  //   addDoc(colRef,{
+
+  //     Username: addDetails.username.value,
+  //     Password: addDetails.password.value,
+
+  //   })
+  //   .then( () => {
+
+  //     addDetails.reset();
+
+  //   })
+
+  // })

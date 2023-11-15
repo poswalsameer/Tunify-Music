@@ -125,10 +125,10 @@ input:active{
 
 .btn{
 
-    height: 2rem;
-    width: 5rem;
+    height: 3rem;
+    width: 10rem;
     position: absolute;
-    left: 48%;
+    left: 46%;
     top: 80%;
     border: 2px solid white;
     background-color: rgb(36, 85, 36);
