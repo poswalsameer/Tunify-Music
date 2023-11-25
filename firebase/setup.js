@@ -63,26 +63,41 @@ getDocs(colRef)
 
 
 
+  //getting the values from the inputs
+  const getUserDetails = document.querySelector('.login');
+
+  const mail = getUserDetails.email.value;
+  const password = getUserDetails.password.value;
+
+
   //this whole thing works for signing up new users
-  // const signUpForm = document.querySelector('.login');
+  const signUpForm = document.querySelector('.btn-2');
 
-  // signUpForm.addEventListener('submit', (e) => {
+  //to make sure this function works, kya karna hai
 
-  //   e.preventDefault();
+  // 1. then wali statement ke liye ek naya html page banana hai jispe display hoga ki congo your account has been created please login again
 
-  //   const mail = signUpForm.email.value;
-  //   const password = signUpForm.password.value;
+  // 2. if email exists to dusra html page for showing this
 
-  //   createUserWithEmailAndPassword(auth, mail, password)
-  //     .then((cred) => {
-  //       console.log('user created:', cred.user)
-  //       signUpForm.reset();
-  //     })
-  //     .catch((err) => {
-  //       console.log("error");
-  //     })
+  signUpForm.addEventListener('submit', (e) => {
 
-  // })
+    e.preventDefault();
+
+    createUserWithEmailAndPassword(auth, mail, password)
+      .then((cred) => {
+        e.preventDefault();
+        alert("User is created");
+        console.log('user created:', cred.user)
+        signUpForm.reset();
+      })
+      .catch(() => {
+        // window.location.href = 'login.html';
+        e.preventDefault();
+        alert("Email already exists");
+        console.log("error");
+      })
+
+  })
 
 
 
@@ -108,18 +123,17 @@ getDocs(colRef)
   
 
   const logInButton = document.querySelector('.btn');
-  logInButton.addEventListener('submit', (e) => {
+  logInButton.addEventListener('click', (e) => {
       e.preventDefault();
 
-      const email = signUpForm.email.value;
-      const password = signUpForm.password.value;
-
-      signInWithEmailAndPassword(auth, email, password)
-        .then((cred) => {
+      signInWithEmailAndPassword(auth, mail, password)
+        .then(() => {
           // loggedIn = true;
-          console.log("User logged in:", cred.user);
+          window.location.href = 'MusicLibrary.html';
+          console.log("You are logged in");
         })
         .catch(() => {
+          alert("The password you have entered is not correct");
           console.log("Error while logging you in");
         })
   })
