@@ -18,6 +18,10 @@ import { initializeApp } from 'firebase/app';
 import {
     getFirestore, collection, getDocs, addDoc
 } from 'firebase/firestore';
+import {
+  createUserWithEmailAndPassword,
+  getAuth 
+} from 'firebase/auth'
 
 const firebaseConfig = {
     apiKey: "AIzaSyAzcU3kufMN0gf-vjuU6aTbnnG29hkMMk4",
@@ -33,6 +37,9 @@ initializeApp(firebaseConfig);
 
 //creating a new database using the firestore method
 const db = getFirestore();
+
+//initialises authentication services
+const auth = getAuth()
 
 //collecting reference to a collection made in firebase
 const colRef = collection(db, 'User Details');
@@ -58,34 +65,49 @@ getDocs(colRef)
         console.error(" There is some error in your code ");
   } )
 
+
+
+  //this whole thing works for signing up new users
+  const signUpForm = document.querySelector('.login');
+
+  signUpForm.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    const mail = signUpForm.email.value;
+    const password = signUpForm.password.value;
+
+    createUserWithEmailAndPassword(auth, mail, password)
+      .then((cred) => {
+        console.log('user created:', cred.user)
+        signUpForm.reset();
+      })
+      .catch((err) => {
+        console.log("error");
+      })
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // const addDetails = document.querySelector('.login')
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-
-    const addDetails = document.getElementById('login');
-  
-    // Rest of your code...
-    addDetails.addEventListener('submit', (e) => {
-
-      // whenver we submit the form by clicking the submit button, the page gets refreshed, we don't want that to happen
-      //that's why preventDefault() method is used
-      e.preventDefault();
-  
-      addDoc(colRef,{
-  
-        Username: addDetails.username.value,
-        Password: addDetails.password.value,
-  
-      })
-      .then( () => {
-  
-        addDetails.reset();
-  
-      })
-  
-    })
-  });
 
   // const addDetails = document.getElementById('login')
 
@@ -108,3 +130,4 @@ getDocs(colRef)
   //   })
 
   // })
+
