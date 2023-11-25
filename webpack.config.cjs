@@ -6,7 +6,7 @@ module.exports = {
     entry: './firebase/setup.js',
     output: {
         path: path.resolve(__dirname, 'firebase'),
-        filename: 'finalDB.js'
+        filename: './firebase/finalDB.js'
     },
     watch: true
 

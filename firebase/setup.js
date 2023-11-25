@@ -1,29 +1,24 @@
-// const path = require('path');
 
-// module.exports = {
+// import {initializeApp} from "firebase/app" ;
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
 
-//     mode: 'development',
-//     entry: './firebase/setup.js',
-//     output: {
-//         path: path.resolve(__dirname, 'firebase'),
-//         filename: 'finalDB.js'
-//     },
-//     watch: true
+import { getFirestore, collection, getDocs, addDoc } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js'
 
-// }
 
-// console.log("Hello, this is me who is using firebase for the first time");
+// import {
+//   https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js'
+//   , collection, getDocs, addDoc
+// } from 'firebase/firestore'
 
-import { initializeApp } from 'firebase/app';
-import {
-    getFirestore, collection, getDocs, addDoc
-} from 'firebase/firestore';
 import {
   createUserWithEmailAndPassword,
-  getAuth 
-} from 'firebase/auth'
+  getAuth,
+  signOut,
+  signInWithEmailAndPassword
+} from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js'
 
-const firebaseConfig = {
+
+  const firebaseConfig = {
     apiKey: "AIzaSyAzcU3kufMN0gf-vjuU6aTbnnG29hkMMk4",
     authDomain: "music-player-app-69.firebaseapp.com",
     projectId: "music-player-app-69",
@@ -34,6 +29,7 @@ const firebaseConfig = {
 
 //this below written code initialized the firebase app
 initializeApp(firebaseConfig);
+
 
 //creating a new database using the firestore method
 const db = getFirestore();
@@ -68,66 +64,62 @@ getDocs(colRef)
 
 
   //this whole thing works for signing up new users
-  const signUpForm = document.querySelector('.login');
+  // const signUpForm = document.querySelector('.login');
 
-  signUpForm.addEventListener('submit', (e) => {
+  // signUpForm.addEventListener('submit', (e) => {
 
-    e.preventDefault();
-
-    const mail = signUpForm.email.value;
-    const password = signUpForm.password.value;
-
-    createUserWithEmailAndPassword(auth, mail, password)
-      .then((cred) => {
-        console.log('user created:', cred.user)
-        signUpForm.reset();
-      })
-      .catch((err) => {
-        console.log("error");
-      })
-
-  })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // const addDetails = document.querySelector('.login')
-
-
-  // const addDetails = document.getElementById('login')
-
-  // addDetails.addEventListener('submit', (e) => {
-
-  //   // whenver we submit the form by clicking the submit button, the page gets refreshed, we don't want that to happen
-  //   //that's why preventDefault() method is used
   //   e.preventDefault();
 
-  //   addDoc(colRef,{
+  //   const mail = signUpForm.email.value;
+  //   const password = signUpForm.password.value;
 
-  //     Username: addDetails.username.value,
-  //     Password: addDetails.password.value,
-
-  //   })
-  //   .then( () => {
-
-  //     addDetails.reset();
-
-  //   })
+  //   createUserWithEmailAndPassword(auth, mail, password)
+  //     .then((cred) => {
+  //       console.log('user created:', cred.user)
+  //       signUpForm.reset();
+  //     })
+  //     .catch((err) => {
+  //       console.log("error");
+  //     })
 
   // })
 
+
+
+  //from here, working on the log Out button
+  // const logOutButton = document.querySelector('#logOutBtn');
+
+  // logOutButton.addEventListener('click', (e) => {
+  //     signOut(auth)
+  //       .then(() => {
+  //         console.log("The user has been logged out");
+  //       })
+  //       .catch(() => {
+  //         console.log("There is some error while logging out");
+  //       })
+  // })
+
+
+
+  // working on the login part in this section
+
+  // let loggedIn = false;
+
+  
+
+  const logInButton = document.querySelector('.btn');
+  logInButton.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const email = signUpForm.email.value;
+      const password = signUpForm.password.value;
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then((cred) => {
+          // loggedIn = true;
+          console.log("User logged in:", cred.user);
+        })
+        .catch(() => {
+          console.log("Error while logging you in");
+        })
+  })

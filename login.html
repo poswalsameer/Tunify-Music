@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script> -->
     
     <title>Spotify - Login to your account </title>
+
+
 </head>
 <body>
     
@@ -31,25 +35,32 @@
                     <input type="password" name="password" id="password">
                 </div>
                 
-                <button class="btn" onclick="logged"> LOGIN / REGISTER </button>
+                <button class="btn" onclick="logged()"> LOGIN / REGISTER </button>
                 
             </form>
 
         </div>
 
 
-        <script>
+        
 
-            function logged(){
-                window.location.href = 'MusicLibrary.html';
-            }
-
-        </script>
-
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script> -->
         
 </body>
 
-<script src="./firebase/setup.js"></script>
-<script src="./firebase/finalDB.js"></script>
+
+<script type="module" defer src="./firebase/setup.js"></script>
+<!-- <script src="./firebase/finalDB.js"></script> -->
+
+<script>
+
+    function logged(){
+        // window.location.href = 'MusicLibrary.html';
+        setTimeout( window.location.href = 'MusicLibrary.html' , 2000);
+    }
+
+    // setTimeout( window.location.href = 'MusicLibrary.html' , 3000);
+
+</script>
 
 </html>
