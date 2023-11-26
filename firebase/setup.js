@@ -5,11 +5,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebas
 import { getFirestore, collection, getDocs, addDoc } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js'
 
 
-// import {
-//   https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js'
-//   , collection, getDocs, addDoc
-// } from 'firebase/firestore'
-
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -62,7 +57,7 @@ getDocs(colRef)
   } )
 
 
-
+  
 
   //SIGN UP FUNCTION
 
@@ -76,11 +71,11 @@ getDocs(colRef)
     createUserWithEmailAndPassword(auth, mail, password)
       .then( () => {
 
-        alert("User has been created");
+        alert("Welcome " + mail);
 
       })
       .catch( () => {
-        alert("Error signing user up");
+        alert("ERROR SIGNING UP: The email may already exists");
       })
 
   
@@ -106,10 +101,11 @@ getDocs(colRef)
 
     signInWithEmailAndPassword(auth, mail, password)
       .then( () => {
-        alert("login successful");
+        // alert("login successful");
+        window.location.href = "MusicLibrary.html";
       })
       .catch( () => {
-        alert("error while logging");
+        alert("EMAIL/PASSWORD ENTERED IS NOT CORRECT");
       })
 
   }
@@ -121,6 +117,31 @@ getDocs(colRef)
   //LOGIN FUNCTION ENDS HERE
   
   
+
+
+  // LOGOUT FUNCTION STARTS HERE
+  
+
+//  const logOutBtn = document.getElementById('userIcon');
+
+//  function logOutUser(){
+
+//   alert("button is working");
+//   // window.location.href = 'login.html';
+
+//  }
+
+//  for (var i = 0; i < logOutBtn.length; i++) {
+//   logOutBtn[i].addEventListener('click', logOutUser);
+
+// }
+
+function logOut(){
+  alert("fdfd");
+}
+
+//  logOutBtn.addEventListener('click', logOutUser);
+
 
 
 

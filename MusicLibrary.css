@@ -114,7 +114,7 @@ ul a:hover{
     /* display: flex; */
     /* align-items: right; */
     float: right;
-    margin-right: 6rem;
+    margin-right: 8rem;
     margin-top: -3.3rem;
     outline: none;
     padding: 2px 15px;
@@ -466,8 +466,8 @@ ul a:hover{
 
 .searchButton img{
     position: absolute;
-    right: 6.2%;
-    top: 29%;
+    right: 8.8%;
+    top: 40%;
     height: 1.8rem;
     width: 1.8rem;
     cursor: pointer;
@@ -644,14 +644,35 @@ input[type="range"]{
     cursor: pointer;
 }
 
-.userLogin{
+.userIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1.8rem;
+    width: 4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: black;
+    color: rgba(72, 234, 54, 0.659);;
+    /* position: relative; */
+    /* top: 1%; */
+    margin-top: -4.35rem;
+    /* right: 30%; */
+}
+
+
+
+/* .userLogin{
 
     position: absolute;
     /* right: 1%; */
-    top: 14%;
+    /* top: 14%; */ 
 
     /* This is the place where the login will be before clicking the user icon */
-    right: 2%;
+    /* right: 2%;
 
     opacity: 0;
 
@@ -666,57 +687,61 @@ input[type="range"]{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
-}
 
-.userInfo{
+
+/* .userInfo{
 
     display: flex;
+    height: 1rem;
+    width: 1rem;
+    justify-content: center;
+    align-items: center;
     
-}
+} */
 
-.userInfo p{
-    font-size: 1.2rem;
+/* .userInfo p{
+    font-size: 2px;
     position: absolute;
     top: 46%;
     right: 8%;
 
-}
+} */
 
-.userInfo img{
+/* .userInfo img{
     position: absolute;
     top: 45%;
     right: 70%;
     height: 2.3rem;
     width: 2.3rem;
     background-color: white;
-    border-radius: 50%;
-}
+    border-radius: 50%; */
 
-.icon{
+
+/* .icon{
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-bottom: 2rem; */
-    position: absolute;
-    top: 9%;
-} 
+    /* position: absolute; */
+    /* top: 9%; */
 
-.icon img{
+
+/* .icon img{
 
     height: 4rem;
     width: 4rem;
 
-}
+} */
 
-.icon p{
+/* .icon p{
     font-weight: bolder;
     font-size: 1.5rem;
     margin-top: 1rem;
-}
+} */
 
-.loginBtn{
+/* .loginBtn{
 
     position:absolute;
     top: 76%;
@@ -731,14 +756,14 @@ input[type="range"]{
     border-radius: 10px;
     transition: position;
 
-}
+} */
 
-.loginBtn:hover{
+/* .loginBtn:hover{
     border: 2px solid rgb(59, 180, 46);
     background-color: rgb(230, 215, 215);
     color: rgb(59, 180, 46);
-}
-.forget{
+} */
+/* .forget{
 
     position: absolute;
     top: 66.3%;
@@ -749,15 +774,15 @@ input[type="range"]{
 
 .forget:hover{
     cursor: pointer;
-}
+} */
 
-.cross{
+/* .cross{
 
     height: 1rem;
     width: 1rem;
 
-    display: flex;
-    justify-content: center;
+    display: flex; */
+    /* justify-content: center;
     align-items: center;
     font-size: 0.5rem;
     font-weight: bolder;
@@ -772,7 +797,7 @@ input[type="range"]{
     top: 3%;
     right: 3%;
 
-}
+} */
 
 
 

@@ -49,23 +49,9 @@ let songCount = 0;
 // a bool check which is done if we directly play the song with clicking on the play button instead of div
 let firstPlay = false;
 
-cross.addEventListener('click', ()=>{
 
-    userLogin.style.transition = 'position 2s ease-in-out';
 
-    //changing the opacity of logout bar to 0 on clicking the cross button
-    userLogin.style.opacity = '0';
 
-})
-
-userIcon.addEventListener('click', ()=>{
-
-    userLogin.style.transition = 'position 2s ease-in-out';
-
-    userLogin.style.opacity = '1';
-    console.log("Fired");
-
-})
 
 
 up.addEventListener('click', ()=>{
@@ -467,5 +453,3 @@ audioProgress.addEventListener('change', ()=> {
 //     window.location.href = 'login.html';
 
 // }
-
-
