@@ -63,77 +63,73 @@ getDocs(colRef)
 
 
 
-  //getting the values from the inputs
-  const getUserDetails = document.querySelector('.login');
 
-  const mail = getUserDetails.email.value;
-  const password = getUserDetails.password.value;
+  //SIGN UP FUNCTION
 
+  let reg = document.getElementsByClassName('btn-2');
 
-  //this whole thing works for signing up new users
-  const signUpForm = document.querySelector('.btn-2');
+  function registerUser(){
 
-  //to make sure this function works, kya karna hai
-
-  // 1. then wali statement ke liye ek naya html page banana hai jispe display hoga ki congo your account has been created please login again
-
-  // 2. if email exists to dusra html page for showing this
-
-  signUpForm.addEventListener('submit', (e) => {
-
-    e.preventDefault();
+    const mail = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
     createUserWithEmailAndPassword(auth, mail, password)
-      .then((cred) => {
-        e.preventDefault();
-        alert("User is created");
-        console.log('user created:', cred.user)
-        signUpForm.reset();
+      .then( () => {
+
+        alert("User has been created");
+
       })
-      .catch(() => {
-        // window.location.href = 'login.html';
-        e.preventDefault();
-        alert("Email already exists");
-        console.log("error");
+      .catch( () => {
+        alert("Error signing user up");
       })
 
-  })
+  
+  }
+
+  for (var i = 0; i < reg.length; i++) {
+    reg[i].addEventListener('click', registerUser);
+  }
+
+  //SIGN UP FUNCTION IS DONE HERE 
 
 
 
-  //from here, working on the log Out button
-  // const logOutButton = document.querySelector('#logOutBtn');
 
-  // logOutButton.addEventListener('click', (e) => {
-  //     signOut(auth)
-  //       .then(() => {
-  //         console.log("The user has been logged out");
-  //       })
-  //       .catch(() => {
-  //         console.log("There is some error while logging out");
-  //       })
-  // })
+  // LOG IN FUNCTION STARTS HERE
+
+  let loginBtn = document.getElementsByClassName('btn');
+
+  function loginUser(){
+
+    const mail = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    signInWithEmailAndPassword(auth, mail, password)
+      .then( () => {
+        alert("login successful");
+      })
+      .catch( () => {
+        alert("error while logging");
+      })
+
+  }
+
+  for (var i = 0; i < loginBtn.length; i++) {
+    loginBtn[i].addEventListener('click', loginUser);
+  }
+
+  //LOGIN FUNCTION ENDS HERE
+  
+  
 
 
 
-  // working on the login part in this section
 
-  // let loggedIn = false;
+
+
+ 
+
+
 
   
 
-  const logInButton = document.querySelector('.btn');
-  logInButton.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      signInWithEmailAndPassword(auth, mail, password)
-        .then(() => {
-          // loggedIn = true;
-          window.location.href = 'MusicLibrary.html';
-          console.log("You are logged in");
-        })
-        .catch(() => {
-          alert("The password you have entered is not correct");
-          console.log("Error while logging you in");
-        })
-  })

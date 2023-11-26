@@ -48,7 +48,8 @@ body{
 
     display: flex;
     /* margin: auto; */
-    margin-top: 3rem;
+    flex-direction: column;
+    margin-top: 1rem;
     margin-left: 28.5rem;
 
     justify-content: center;

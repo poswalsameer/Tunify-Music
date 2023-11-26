@@ -462,10 +462,10 @@ audioProgress.addEventListener('change', ()=> {
 
 })
 
-function logOut(){
+// function logOut(){
 
-    window.location.href = 'login.html';
+//     window.location.href = 'login.html';
 
-}
+// }
 
 

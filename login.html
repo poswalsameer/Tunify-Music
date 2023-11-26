@@ -9,6 +9,7 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script> -->
     
     <title>Spotify - Login to your account </title>
+    <script type="module" defer src="./firebase/setup.js"></script>
 
 
 </head>
@@ -21,12 +22,12 @@
 
         <div class="container">
 
-            <form class="login" id="login" >
+            <!-- <form class="login" id="login" > -->
 
                 <div class="mail">
                     <!-- <label for="email">Enter your Email: </label> -->
                     <img src="mailIcon-removebg-preview.png" alt="">
-                    <input type="email" name="email" id="mail">
+                    <input type="email" name="email" id="email">
                 </div>
 
                 <div class="pass">
@@ -35,11 +36,12 @@
                     <input type="password" name="password" id="password">
                 </div>
                 
-                <button class="btn"> LOGIN </button>
+                
+                <button class="btn" onclick="loginUser()" > LOGIN </button>
                 
                 <button class="btn-2" >REGISTER</button>
                 
-            </form>
+            <!-- </form> -->
 
             
 
@@ -53,7 +55,7 @@
 </body>
 
 
-<script type="module" defer src="./firebase/setup.js"></script>
+<!-- <script type="module" defer src="./firebase/setup.js"></script> -->
 <!-- <script src="./firebase/finalDB.js"></script> -->
 
 <!-- <script>
