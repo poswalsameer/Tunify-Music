@@ -136,9 +136,7 @@ getDocs(colRef)
 
 // }
 
-function logOut(){
-  alert("fdfd");
-}
+
 
 //  logOutBtn.addEventListener('click', logOutUser);
 
