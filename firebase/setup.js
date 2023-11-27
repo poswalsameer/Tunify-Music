@@ -122,14 +122,15 @@ getDocs(colRef)
   // LOGOUT FUNCTION STARTS HERE
   
 
-//  const logOutBtn = document.getElementById('userIcon');
+ const logOutBtn = document.getElementById('userIcon');
 
-//  function logOutUser(){
+ function logOutUser(){
 
-//   alert("button is working");
-//   // window.location.href = 'login.html';
+  // alert("button is working");
+  signOut(auth);
+  window.location.href = 'index.html';
 
-//  }
+ }
 
 //  for (var i = 0; i < logOutBtn.length; i++) {
 //   logOutBtn[i].addEventListener('click', logOutUser);
@@ -137,10 +138,9 @@ getDocs(colRef)
 // }
 
 
+ logOutBtn.addEventListener('click', logOutUser);
 
-//  logOutBtn.addEventListener('click', logOutUser);
-
-
+ //LOGOUT FUNCTION ENDS HERE
 
 
 
