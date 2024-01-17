@@ -1,6 +1,3 @@
-// HOW TO START SERVER IN TERMIAL
-
-// Type node + folder name + \ + file name
 
 const http = require('http');
  
