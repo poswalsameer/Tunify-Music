@@ -61,12 +61,14 @@ getDocs(colRef)
 
   //SIGN UP FUNCTION
 
-  let reg = document.getElementsByClassName('btn-2');
+  let reg = document.getElementById('btn-2');
 
   function registerUser(){
 
     const mail = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+
+    console.log("user registered");
 
     createUserWithEmailAndPassword(auth, mail, password)
       .then( () => {
@@ -81,9 +83,11 @@ getDocs(colRef)
   
   }
 
-  for (var i = 0; i < reg.length; i++) {
-    reg[i].addEventListener('click', registerUser);
-  }
+  reg.addEventListener('click', registerUser);
+
+  // for (var i = 0; i < reg.length; i++) {
+  //   reg[i].addEventListener('click', registerUser);
+  // }
 
   //SIGN UP FUNCTION IS DONE HERE 
 
@@ -92,12 +96,14 @@ getDocs(colRef)
 
   // LOG IN FUNCTION STARTS HERE
 
-  let loginBtn = document.getElementsByClassName('btn');
+  let loginBtn = document.getElementById('btn');
 
   function loginUser(){
 
     const mail = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+
+    console.log("user logged in");
 
     signInWithEmailAndPassword(auth, mail, password)
       .then( () => {
@@ -110,9 +116,11 @@ getDocs(colRef)
 
   }
 
-  for (var i = 0; i < loginBtn.length; i++) {
-    loginBtn[i].addEventListener('click', loginUser);
-  }
+  loginBtn.addEventListener('click', loginUser);
+
+  // for (var i = 0; i < loginBtn.length; i++) {
+  //   loginBtn[i].addEventListener('click', loginUser);
+  // }
 
   //LOGIN FUNCTION ENDS HERE
   
