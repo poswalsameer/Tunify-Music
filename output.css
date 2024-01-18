@@ -606,6 +606,29 @@ video {
   margin: 0.75rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -630,6 +653,14 @@ video {
   display: none;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -642,28 +673,60 @@ video {
   height: 20rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-16 {
+  height: 4rem;
 }
 
-.h-40 {
-  height: 10rem;
+.h-10 {
+  height: 2.5rem;
 }
 
-.w-3 {
-  width: 0.75rem;
+.h-12 {
+  height: 3rem;
 }
 
-.w-\[20rem\] {
-  width: 20rem;
+.h-\[19rem\] {
+  height: 19rem;
+}
+
+.h-\[18rem\] {
+  height: 18rem;
 }
 
 .w-20 {
   width: 5rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .w-40 {
   width: 10rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
+}
+
+.w-\[19rem\] {
+  width: 19rem;
+}
+
+.w-\[18rem\] {
+  width: 18rem;
 }
 
 .border-collapse {
@@ -694,12 +757,25 @@ video {
   justify-content: center;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-r-4 {
   border-right-width: 4px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -710,6 +786,16 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-green-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
 .p-0 {
@@ -731,6 +817,11 @@ video {
   line-height: 1;
 }
 
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -747,6 +838,11 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .outline {
