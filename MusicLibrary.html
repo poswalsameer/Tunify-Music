@@ -1,167 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MusicLibrary.css">
+    <!-- <link rel="stylesheet" href="MusicLibrary.css"> -->
+
+    <link rel="stylesheet" href="appInput.css">
+    <link rel="stylesheet" href="appOutput.css">
+
     <title>Spotify Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <script type="module" defer src="./firebase/setup.js"></script>
 
     <script type="module" src="script.js"></script>
 </head>
-<body class="body">
-    
-    <div class="menu">
-        
-        <ul>
 
-            <li><img src="spotify.png" alt="SPOTIFY" class="logo"></li>
+<body class="bg-black text-white ">
 
-            <li class="home"><strong><a href="#home">Home</a></strong></li>
+    <div class="flex flex-row justify-end items-center bg-green-600">
 
-            <li class="topCharts"><strong><a href="#topCharts">Top Charts</a></strong></li>
+        <!-- <div class="flex flex-row items-center justify-center" > -->
+        <ul class="list-none flex flex-row ">
 
-            <li class="fav"><strong><a href="#fav">Favourites</a></strong></li>
+            <li><img src="spotify.png" alt="SPOTIFY" class="h-10 w-10 rounded-3xl "></li>
 
-            <li class="download"><strong><a href="#download">Your Downloads</a></strong></li>
+            <li class="mx-3"><strong><a href="#home" class="no-underline text-black ">Home</a></strong></li>
+
+            <li class="mx-3"><strong><a href="#topCharts" class="no-underline text-black ">Top Charts</a></strong></li>
+
+            <li class="mx-3"><strong><a href="#fav" class="no-underline text-black ">Favourites</a></strong></li>
+
+            <li class="mx-3"><strong><a href="#download" class="no-underline text-black ">Your Downloads</a></strong>
+            </li>
 
         </ul>
+    <!-- </div> -->
 
-        <div class="search">
-            <textarea name="" class="text" cols="20" rows="1" placeholder="        Search here"></textarea>
-        </div>
-        
-        <div class="searchButton">
-            <img src="searchIcon.png" alt="">
-        </div>
+        <div class="flex flex-row justify-center items-center" >
+            <textarea name="" cols="20" rows="1" class="resize-none mx-4 " 
+            placeholder="Search here"></textarea>
 
-        <button class="userIcon" id="userIcon">
-            Sign Out
-        </button>
+            
+            <img src="searchIcon.png" alt="" class="h-10 w-10 mx-4 ">
+            
 
-    </div>
-   
-    
-    <div class="main" id="home">
-
-        <div class="homeBody">
-            <p class="para">Join the community of musical souls just like you and have an ad-free experience which we bet you never had before just for $1.99</p>
-            <button class="join">Join Now</button>
-            <button class="free">Listen for free</button>
-        </div>
-
-        <div class="mainImg">
-                <!-- Main image will be here -->
-                <img src="websiteIMG.jpg" alt="image" class="image">
+            <button id="userIcon" class="h-10 w-24 bg-white text-black border-2 border-black rounded-lg font-bold mx-2 " >
+                Sign Out
+            </button>
         </div>
 
     </div>
-    
-    <h1 class="heading">Top Charts</h1>
 
-    <div class="chartBody" id="topCharts">
-        <div class="song" id="cheques">
-            <img src="cheques.jpg" alt="cheques" class="image">
-             <p><b>CHEQUES</b>  By Shubh </p></div>
-        <div class="song" id="wakeUp">
-            <img src="wakeUp.jpg" alt="wakeup" class="image">
-            <p><b>WAKE UP</b>  by Gurinder Gill</p></div>
-        <div class="song" id="og">
-            <img src="Og.jpg" alt="og" class="image">
-            <p><b>OG</b>  By Shubh</p></div>
-        <div class="song" id="pind">
-            <img src="pindDaRiwaaz.jpg" alt="pind" class="image">
-            <p><b>PIND DA RIWAAZ</b>  by Wazir Patar</p></div>
-        <div class="song" id="levels">
-            <img src="levels.jpg" alt="levels" class="image">
-            <p><b>LEVELS</b>  by Sidhu Moose Wala</p></div>
-        <div class="song" id="obsessed">
-            <img src="obsessed.jpg" alt="obsessed" class="image">
-            <p><b>OBSESSED</b>  by Riar Saab</p></div>
-        <div class="song" id="excuses">
-            <img src="excuses.jpg" alt="excuses" class="image">
-            <p><b>EXCUSES</b>  by AP Dhillon</p></div>
-        <div class="song" id="yaari">
-            <img src="yaari.jpg" alt="yaari" class="image">
-            <p><b class="yaari">YAARI CHANDIGARH WALIYE</b></p></div>
+
+    <div id="home">
+
+        <div>
+            <p>Join the community of musical souls just like you and have an ad-free experience which we bet you never
+                had before just for $1.99</p>
+            <button>Join Now</button>
+            <button>Listen for free</button>
+        </div>
+
+        <div>
+            <!-- Main image will be here -->
+            <img src="websiteIMG.jpg" alt="image">
+        </div>
+
+    </div>
+
+    <h1>Top Charts</h1>
+
+    <div id="topCharts">
+        <div id="cheques">
+            <img src="cheques.jpg" alt="cheques">
+            <p><b>CHEQUES</b> By Shubh </p>
+        </div>
+        <div id="wakeUp">
+            <img src="wakeUp.jpg" alt="wakeup">
+            <p><b>WAKE UP</b> by Gurinder Gill</p>
+        </div>
+        <div id="og">
+            <img src="Og.jpg" alt="og">
+            <p><b>OG</b> By Shubh</p>
+        </div>
+        <div id="pind">
+            <img src="pindDaRiwaaz.jpg" alt="pind">
+            <p><b>PIND DA RIWAAZ</b> by Wazir Patar</p>
+        </div>
+        <div id="levels">
+            <img src="levels.jpg" alt="levels">
+            <p><b>LEVELS</b> by Sidhu Moose Wala</p>
+        </div>
+        <div id="obsessed">
+            <img src="obsessed.jpg" alt="obsessed">
+            <p><b>OBSESSED</b> by Riar Saab</p>
+        </div>
+        <div id="excuses">
+            <img src="excuses.jpg" alt="excuses">
+            <p><b>EXCUSES</b> by AP Dhillon</p>
+        </div>
+        <div id="yaari">
+            <img src="yaari.jpg" alt="yaari">
+            <p><b>YAARI CHANDIGARH WALIYE</b></p>
+        </div>
     </div>
 
 
 
 
-    <h1 class="favHead">Your Favourite Artists</h1>
+    <h1>Your Favourite Artists</h1>
 
-    <div class="favArtist" id="fav">
+    <div id="fav">
 
-        <div class="singer"><img src="imranKhan.jpg" alt="Imran Khan"><p class="artistName"><a href="https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js" target="_blank">Imran Khan</a></p></div>
+        <div><img src="imranKhan.jpg" alt="Imran Khan">
+            <p class="artistName"><a href="https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js" target="_blank">Imran
+                    Khan</a></p>
+        </div>
 
-        <div class="singer"><img src="jassiGill.jpg" alt="Jassi Gill"><p class="artistName"><a href="https://open.spotify.com/artist/3xZnxcyeC0vVaJvEA9VqrA" target="_blank">Jassi Gill</a></p></div>
+        <div><img src="jassiGill.jpg" alt="Jassi Gill">
+            <p class="artistName"><a href="https://open.spotify.com/artist/3xZnxcyeC0vVaJvEA9VqrA" target="_blank">Jassi
+                    Gill</a></p>
+        </div>
 
-        <div class="singer"><img src="karanAujla.jpg" alt="Karan Aujla"><p class="artistName"><a href="https://open.spotify.com/artist/6DARBhWbfcS9E4yJzcliqQ" target="_blank">Karan Aujla</a></p></div>
+        <div><img src="karanAujla.jpg" alt="Karan Aujla">
+            <p class="artistName"><a href="https://open.spotify.com/artist/6DARBhWbfcS9E4yJzcliqQ" target="_blank">Karan
+                    Aujla</a></p>
+        </div>
 
-        <div class="singer"><img src="gurinder.jpg" alt="Khandu Don"><p class="artistName"><a href="" target="_blank">Gurinder Gill</a></p></div>
+        <div><img src="gurinder.jpg" alt="Khandu Don">
+            <p class="artistName"><a href="" target="_blank">Gurinder Gill</a></p>
+        </div>
 
-        <div class="singer"><img src="KK.jpg" alt="KK"><p class="artistName"><a href="https://open.spotify.com/artist/4fEkbug6kZzzJ8eYX6Kbbp" target="_blank">KK</a></p></div>
+        <div><img src="KK.jpg" alt="KK">
+            <p class="artistName"><a href="https://open.spotify.com/artist/4fEkbug6kZzzJ8eYX6Kbbp"
+                    target="_blank">KK</a></p>
+        </div>
 
-        <div class="singer"><img src="shubh.jpg" alt="Shubh"><p class="artistName"><a href="https://open.spotify.com/artist/5r3wPya2PpeTTsXsGhQU8O" target="_blank">Shubh</a></p></div>
+        <div><img src="shubh.jpg" alt="Shubh">
+            <p class="artistName"><a href="https://open.spotify.com/artist/5r3wPya2PpeTTsXsGhQU8O"
+                    target="_blank">Shubh</a></p>
+        </div>
 
-        <div class="singer"><img src="sidhuMoose.jpg" alt="Sidhu Moose Wala"><p class="artistName"><a href="https://open.spotify.com/artist/4PULA4EFzYTrxYvOVlwpiQ" target="_blank">Moose Wala</a></p></div>
+        <div><img src="sidhuMoose.jpg" alt="Sidhu Moose Wala">
+            <p class="artistName"><a href="https://open.spotify.com/artist/4PULA4EFzYTrxYvOVlwpiQ" target="_blank">Moose
+                    Wala</a></p>
+        </div>
 
-        <div class="singer"><img src="wazir.jpeg" alt="Wazir"><p class="artistName"><a href="https://open.spotify.com/artist/3bCfmBmsKvp4UXialp6xNZ" target="_blank">Wazir Patar</a></p></div>
-        
+        <div><img src="wazir.jpeg" alt="Wazir">
+            <p class="artistName"><a href="https://open.spotify.com/artist/3bCfmBmsKvp4UXialp6xNZ" target="_blank">Wazir
+                    Patar</a></p>
+        </div>
+
     </div>
 
-    <h1 class="downloadHead">Downloads</h1>
-    <div class="downloads" id="download">
-        
-        <div class="downloadBody">
+    <h1>Downloads</h1>
+    <div id="download">
+
+        <div>
             No Downloads
         </div>
     </div>
 
-    <div class="player" id="player">
-        
+    <div id="player">
+
         <!-- <div class="songInfo"> -->
-            <!-- <img src="cheques.jpg" alt="cheques">
+        <!-- <img src="cheques.jpg" alt="cheques">
             <p class="songName">Cheques</p>
             <p class="singerName">Shubh</p> -->
         <!-- </div> -->
 
         <!-- This is the footer -->
-        <div class="buttons">
+        <div>
 
-            <img src="cheques.jpg" alt="cheques" class="songImage" id="songImage">
-            <p class="songName" id="songName">Cheques</p>
-            <p class="singerName" id="singerName">Shubh</p> 
+            <img src="cheques.jpg" alt="cheques" id="songImage">
+            <p id="songName">Cheques</p>
+            <p id="singerName">Shubh</p>
 
             <!-- backward button -->
-            <div class="backward">
-                <img src="backward.png" alt="" class="backwardBtn" id="backwardBtn" >
+            <div>
+                <img src="backward.png" alt="" id="backwardBtn">
             </div>
 
             <!-- play button -->
-            <div class="play">
+            <div>
                 <img src="play.png" alt="play" id="playBtn">
             </div>
 
             <!-- forward button -->
-            <div class="forward">
-                <img src="forward.png" alt="" class="forwardBtn" id="forwardBtn" >
+            <div>
+                <img src="forward.png" alt="" id="forwardBtn">
             </div>
-            
-            <img src="volUp.png" alt="" class="up" id="up">
-            <p class="volume">Volume</p>
-            <img src="volumeDown.png" alt="" class="down" id="down">
-            
-            
+
+            <img src="volUp.png" alt="" id="up">
+            <p>Volume</p>
+            <img src="volumeDown.png" alt="" id="down">
+
+
 
         </div>
 
-        <div class="audioBar">
-            <input type="range" name="Audio" id="bar"class="progress"  value="0" min="0" max="100">
+        <div>
+            <input type="range" name="Audio" id="bar" value="0" min="0" max="100">
         </div>
 
     </div>
@@ -172,6 +215,9 @@
 
 <script src="./firebase/finalDB.js"></script>
 <!-- <script src="./firebase/setup.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/f4b520afae.js" crossorigin="anonymous"></script>
+
 </html>
