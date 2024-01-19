@@ -21,34 +21,34 @@
 
 <body class="bg-black text-white ">
 
-    <div class="flex flex-row justify-end items-center bg-green-600">
+    <div class=" h-20 flex flex-row justify-between items-center bg-green-600">
 
         <!-- <div class="flex flex-row items-center justify-center" > -->
-        <ul class="list-none flex flex-row ">
+        <ul class=" mt-3 list-none flex flex-row justify-center items-center ">
 
-            <li><img src="spotify.png" alt="SPOTIFY" class="h-10 w-10 rounded-3xl "></li>
+            <li><img src="spotify.png" alt="SPOTIFY" class=" mx-3 h-10 w-10 rounded-3xl "></li>
 
-            <li class="mx-3"><strong><a href="#home" class="no-underline text-black ">Home</a></strong></li>
+            <li class="mx-3"><strong><a href="#home" class="no-underline text-black text-2xl ">Home</a></strong></li>
 
-            <li class="mx-3"><strong><a href="#topCharts" class="no-underline text-black ">Top Charts</a></strong></li>
+            <li class="mx-3"><strong><a href="#topCharts" class="no-underline text-black text-2xl ">Top Charts</a></strong></li>
 
-            <li class="mx-3"><strong><a href="#fav" class="no-underline text-black ">Favourites</a></strong></li>
+            <li class="mx-3"><strong><a href="#fav" class="no-underline text-black text-2xl ">Favourites</a></strong></li>
 
-            <li class="mx-3"><strong><a href="#download" class="no-underline text-black ">Your Downloads</a></strong>
+            <li class="mx-3"><strong><a href="#download" class="no-underline text-black text-2xl ">Your Downloads</a></strong>
             </li>
 
         </ul>
     <!-- </div> -->
 
-        <div class="flex flex-row justify-center items-center" >
-            <textarea name="" cols="20" rows="1" class="resize-none mx-4 " 
-            placeholder="Search here"></textarea>
+        <div class=" mr-4 flex flex-row justify-center items-center" >
+            <textarea name="" cols="20" rows="1" class="resize-none mx-2 p-2 rounded-lg " 
+            placeholder=" Search here"></textarea>
 
             
-            <img src="searchIcon.png" alt="" class="h-10 w-10 mx-4 ">
+            <img src="searchIcon.png" alt="" class="h-8 w-8 mx-4 ">
             
 
-            <button id="userIcon" class="h-10 w-24 bg-white text-black border-2 border-black rounded-lg font-bold mx-2 " >
+            <button id="userIcon" class="h-10 w-24 bg-white text-black border-2 border-black rounded-lg font-bold mx-2" >
                 Sign Out
             </button>
         </div>
@@ -56,57 +56,66 @@
     </div>
 
 
-    <div id="home">
+    <div id="home" class=" m-10 flex flex-row justify-center items-center" >
 
-        <div>
-            <p>Join the community of musical souls just like you and have an ad-free experience which we bet you never
+        <div class="m-10 w-[50rem] " >
+            <p class="text-4xl" >Join the community of musical souls just like you and have an ad-free experience which we bet you never
                 had before just for $1.99</p>
-            <button>Join Now</button>
-            <button>Listen for free</button>
+            <button class="m-5 h-12 w-36 bg-white text-black font-bold border-[3px] border-green-600 rounded-lg " >Join Now</button>
+            <button class="m-5 h-12 w-36 bg-white text-black font-bold border-[3px] border-green-600 rounded-lg "  >Listen for free</button>
         </div>
 
-        <div>
+        <div class="m-10" >
             <!-- Main image will be here -->
-            <img src="websiteIMG.jpg" alt="image">
+            <img src="websiteIMG.jpg" alt="image" class=" h-[30rem] w-[60rem] rounded-xl border-2 border-white " >
         </div>
 
     </div>
 
-    <h1>Top Charts</h1>
+    <h1 class=" mt-10 mx-16 text-6xl text-green-600 font-extrabold" >Top Charts</h1>
 
-    <div id="topCharts">
-        <div id="cheques">
-            <img src="cheques.jpg" alt="cheques">
-            <p><b>CHEQUES</b> By Shubh </p>
+    <div id="topCharts" class="m-10 grid grid-cols-2 grid-rows-3 " >
+
+        <div id="cheques" class="flex flex-row justify-evenly items-center border-2 border-white rounded-lg m-4 " >
+            <img src="cheques.jpg" alt="cheques" class="  my-8 h-40 w-40 rounded-xl " >
+            <p class="text-xl " ><b>CHEQUES</b> By Shubh </p>
         </div>
-        <div id="wakeUp">
-            <img src="wakeUp.jpg" alt="wakeup">
-            <p><b>WAKE UP</b> by Gurinder Gill</p>
+
+        <div id="wakeUp" class="flex flex-row justify-evenly items-center border-2 border-white rounded-lg m-4" >
+            <img src="wakeUp.jpg" alt="wakeup" class=" my-8  h-40 w-40 rounded-xl">
+            <p class="text-xl"><b>WAKE UP</b> by Gurinder Gill</p>
         </div>
-        <div id="og">
-            <img src="Og.jpg" alt="og">
-            <p><b>OG</b> By Shubh</p>
+
+        <div id="og" class="flex flex-row justify-evenly items-center border-2 border-white rounded-lg m-4" >
+            <img src="Og.jpg" alt="og" class="my-8 h-40 w-40 rounded-xl">
+            <p class="text-xl"><b>OG</b> By Shubh</p>
         </div>
-        <div id="pind">
-            <img src="pindDaRiwaaz.jpg" alt="pind">
-            <p><b>PIND DA RIWAAZ</b> by Wazir Patar</p>
+
+        <div id="pind" class="flex flex-row justify-between items-center border-2 border-white rounded-lg m-4" >
+            <img src="pindDaRiwaaz.jpg" alt="pind" class="my-8 mx-12 h-40 w-40 rounded-xl">
+            <p class="text-xl mr-40"><b>PIND DA RIWAAZ</b> by Wazir Patar</p>
         </div>
-        <div id="levels">
-            <img src="levels.jpg" alt="levels">
-            <p><b>LEVELS</b> by Sidhu Moose Wala</p>
+
+        <div id="levels" class="flex flex-row justify-between items-center border-2 border-white rounded-lg m-4">
+            <img src="levels.jpg" alt="levels" class="my-8 mx-12 h-40 w-40 rounded-xl">
+            <p class="text-xl mr-32"><b>LEVELS</b> by Sidhu Moose Wala</p>
         </div>
-        <div id="obsessed">
-            <img src="obsessed.jpg" alt="obsessed">
-            <p><b>OBSESSED</b> by Riar Saab</p>
+
+        <div id="obsessed" class="flex flex-row justify-between items-center border-2 border-white rounded-lg m-4">
+            <img src="obsessed.jpg" alt="obsessed" class="my-8 mx-12 h-40 w-40 rounded-xl">
+            <p class="text-xl mr-40"><b>OBSESSED</b> by Riar Saab</p>
         </div>
-        <div id="excuses">
-            <img src="excuses.jpg" alt="excuses">
-            <p><b>EXCUSES</b> by AP Dhillon</p>
+
+        <div id="excuses" class="flex flex-row justify-between items-center border-2 border-white rounded-lg m-4">
+            <img src="excuses.jpg" alt="excuses" class="my-8 mx-12 h-40 w-40 rounded-xl">
+            <p class="text-xl mr-40"><b>EXCUSES</b> by AP Dhillon</p>
         </div>
-        <div id="yaari">
-            <img src="yaari.jpg" alt="yaari">
-            <p><b>YAARI CHANDIGARH WALIYE</b></p>
+
+        <div id="yaari" class="flex flex-row justify-between items-center border-2 border-white rounded-lg m-4">
+            <img src="yaari.jpg" alt="yaari" class="my-8 mx-12 h-40 w-40 rounded-xl">
+            <p class="text-xl mr-32"><b>YAARI CHANDIGARH WALIYE</b></p>
         </div>
+
     </div>
 
 
