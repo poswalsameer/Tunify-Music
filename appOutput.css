@@ -602,6 +602,14 @@ video {
   position: sticky;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
 .float-end {
   float: inline-end;
 }
@@ -647,6 +655,16 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
 .mx-16 {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -667,6 +685,16 @@ video {
   margin-right: 1rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -682,52 +710,50 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.-mb-2 {
+  margin-bottom: -0.5rem;
+}
+
+.-ml-40 {
+  margin-left: -10rem;
+}
+
+.-ml-96 {
+  margin-left: -24rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-56 {
+  margin-bottom: 14rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .ml-3 {
   margin-left: 0.75rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mr-10 {
@@ -738,28 +764,64 @@ video {
   margin-right: 5rem;
 }
 
-.mr-40 {
-  margin-right: 10rem;
-}
-
-.mr-36 {
-  margin-right: 9rem;
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mr-32 {
   margin-right: 8rem;
 }
 
-.-ml-40 {
-  margin-left: -10rem;
+.mr-36 {
+  margin-right: 9rem;
 }
 
-.-ml-\[20rem\] {
-  margin-left: -20rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
-.-ml-96 {
-  margin-left: -24rem;
+.mr-40 {
+  margin-right: 10rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-\[0\.7rem\] {
+  margin-top: 0.7rem;
 }
 
 .block {
@@ -806,24 +868,64 @@ video {
   height: 5rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .h-40 {
   height: 10rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-5 {
   height: 1.25rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .h-8 {
   height: 2rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[15rem\] {
   height: 15rem;
+}
+
+.h-\[2\.3rem\] {
+  height: 2.3rem;
+}
+
+.h-\[2\.8rem\] {
+  height: 2.8rem;
+}
+
+.h-\[2rem\] {
+  height: 2rem;
 }
 
 .h-\[30rem\] {
@@ -832,6 +934,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-14 {
@@ -878,12 +984,32 @@ video {
   width: 2rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
 .w-\[15rem\] {
   width: 15rem;
 }
 
+.w-\[2\.3rem\] {
+  width: 2.3rem;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
 .w-\[40rem\] {
   width: 40rem;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[50rem\] {
@@ -892,6 +1018,14 @@ video {
 
 .w-\[60rem\] {
   width: 60rem;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .border-collapse {
@@ -958,6 +1092,10 @@ video {
   justify-content: space-evenly;
 }
 
+.justify-stretch {
+  justify-content: stretch;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1019,6 +1157,11 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -1073,6 +1216,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl {
