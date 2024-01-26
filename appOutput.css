@@ -965,6 +965,10 @@ video {
   margin-top: 2rem;
 }
 
+.mr-12 {
+  margin-right: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1093,10 +1097,6 @@ video {
   height: 2.3rem;
 }
 
-.h-\[4rem\] {
-  height: 4rem;
-}
-
 .h-\[5rem\] {
   height: 5rem;
 }
@@ -1211,10 +1211,6 @@ video {
 
 .w-\[20rem\] {
   width: 20rem;
-}
-
-.w-\[4rem\] {
-  width: 4rem;
 }
 
 .w-\[50\%\] {
@@ -1621,34 +1617,6 @@ video {
   #navTextarea{
     display: none;
   }
-
-  /* #songName{
-        overflow: hidden;
-        margin-left: 0.75rem;
-    }
-
-    #songImage{
-        /* h-12 w-12 mt-4 ml-3 */
-
-  /* height: 3rem;
-        width: 3rem; */
-
-  /* margin-top: 1rem;
-        margin-left: 0.75rem; */
-
-  /* #singerName{
-        overflow: hidden;
-        margin-top: -0.5rem;
-        margin-left: 0.75rem;
-    }
-
-    #playerDiv{
-        margin-left: -1.5rem;
-    }
-
-    #audioBar{
-        margin-left: -1.5rem;
-    } */
 }
 
 .hover\:cursor-pointer:hover {
@@ -1849,10 +1817,6 @@ video {
     margin-top: 0.7rem;
   }
 
-  .sm\:ml-1 {
-    margin-left: 0.25rem;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -2015,6 +1979,10 @@ video {
 
   .sm\:items-center {
     align-items: center;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
 
   .sm\:justify-center {
@@ -2354,6 +2322,22 @@ video {
     margin-top: 0.7rem;
   }
 
+  .md\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2490,6 +2474,10 @@ video {
     width: 100%;
   }
 
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:resize-none {
     resize: none;
   }
@@ -2516,6 +2504,10 @@ video {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:justify-center {
@@ -2845,6 +2837,14 @@ video {
     margin-top: 0.7rem;
   }
 
+  .lg\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .lg\:mr-16 {
+    margin-right: 4rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2981,8 +2981,8 @@ video {
     width: 100%;
   }
 
-  .lg\:w-28 {
-    width: 7rem;
+  .lg\:w-\[80\%\] {
+    width: 80%;
   }
 
   .lg\:resize-none {
@@ -3011,6 +3011,10 @@ video {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-center {
@@ -3336,6 +3340,10 @@ video {
     margin-top: 0.7rem;
   }
 
+  .xl\:mr-20 {
+    margin-right: 5rem;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -3424,6 +3432,10 @@ video {
     width: 10rem;
   }
 
+  .xl\:w-48 {
+    width: 12rem;
+  }
+
   .xl\:w-72 {
     width: 18rem;
   }
@@ -3472,12 +3484,8 @@ video {
     width: 100%;
   }
 
-  .xl\:w-28 {
-    width: 7rem;
-  }
-
-  .xl\:w-48 {
-    width: 12rem;
+  .xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .xl\:resize-none {
@@ -3506,6 +3514,10 @@ video {
 
   .xl\:items-center {
     align-items: center;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
   }
 
   .xl\:justify-center {
@@ -3915,6 +3927,10 @@ video {
     width: 10rem;
   }
 
+  .\32xl\:w-48 {
+    width: 12rem;
+  }
+
   .\32xl\:w-72 {
     width: 18rem;
   }
@@ -3963,14 +3979,6 @@ video {
     width: 100%;
   }
 
-  .\32xl\:w-28 {
-    width: 7rem;
-  }
-
-  .\32xl\:w-48 {
-    width: 12rem;
-  }
-
   .\32xl\:resize-none {
     resize: none;
   }
@@ -3997,6 +4005,10 @@ video {
 
   .\32xl\:items-center {
     align-items: center;
+  }
+
+  .\32xl\:justify-start {
+    justify-content: flex-start;
   }
 
   .\32xl\:justify-center {
@@ -4076,10 +4088,6 @@ video {
 
   .\32xl\:p-4 {
     padding: 1rem;
-  }
-
-  .\32xl\:text-center {
-    text-align: center;
   }
 
   .\32xl\:text-2xl {
