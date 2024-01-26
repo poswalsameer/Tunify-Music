@@ -8,3 +8,15 @@
 /* body{
     font-family: 'Poppins', sans-serif;
 } */
+
+@media (max-width: 640px) {
+
+    #navImage{
+        display: none;
+    }
+
+    #navTextarea{
+        display: none;
+    }
+    
+}
