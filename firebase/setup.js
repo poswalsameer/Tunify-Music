@@ -77,7 +77,13 @@ getDocs(colRef)
 
       })
       .catch( () => {
-        alert("ERROR SIGNING UP: The email may already exists");
+
+        if( mail.length <= 0 || password.length <=0  ){
+          alert("FIELDS ARE EMPTY!");
+        }
+        else{
+          alert("ERROR SIGNING UP: The email may already exists");
+        }
       })
 
   
@@ -111,7 +117,13 @@ getDocs(colRef)
         window.location.href = "MusicLibrary.html";
       })
       .catch( () => {
-        alert("EMAIL/PASSWORD ENTERED IS NOT CORRECT");
+
+        if( mail.length <= 0 || password.length <= 0 ){
+          alert("FIELDS ARE EMPTY!");
+        }
+        else{
+          alert("EMAIL/PASSWORD ENTERED IS NOT CORRECT");
+        }
       })
 
   }

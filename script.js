@@ -451,6 +451,12 @@ audioProgress.addEventListener('change', ()=> {
 
 // function logOut(){
 
-//     window.location.href = 'login.html';
+//     window.location.href = 'index.html';
 
 // }
+
+const logOutBtn = document.getElementById('userIcon');
+
+logOutBtn.addEventListener('click', ()=>{
+    window.location.href = 'index.html';
+})
