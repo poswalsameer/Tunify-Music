@@ -34,17 +34,17 @@
     2xl:h-20 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:items-center 2xl:bg-green-600">
 
       
-        <ul class="mt-3 list-none flex flex-row justify-center items-center
+        <ul class=" -ml-6 mt-3 list-none flex flex-row justify-center items-center
         
-        sm:mt-3 sm:list-none sm:flex sm:flex-row sm:justify-center sm:items-center
+        sm:ml-0 sm:mt-3 sm:list-none sm:flex sm:flex-row sm:justify-center sm:items-center
         
-        md:mt-3 md:list-none md:flex md:flex-row md:justify-center md:items-center
+        md:ml-0 md:mt-3 md:list-none md:flex md:flex-row md:justify-center md:items-center
         
-        lg:mt-3 lg:list-none lg:flex lg:flex-row lg:justify-center lg:items-center
+        lg:ml-0 lg:mt-3 lg:list-none lg:flex lg:flex-row lg:justify-center lg:items-center
         
-        xl:mt-3 xl:list-none xl:flex xl:flex-row xl:justify-center xl:items-center
+        xl:ml-0 xl:mt-3 xl:list-none xl:flex xl:flex-row xl:justify-center xl:items-center
         
-        2xl:mt-3 2xl:list-none 2xl:flex 2xl:flex-row 2xl:justify-center 2xl:items-center ">
+        2xl:ml-0 2xl:mt-3 2xl:list-none 2xl:flex 2xl:flex-row 2xl:justify-center 2xl:items-center ">
 
             <li><img src="spotify.png" alt="SPOTIFY" class="mx-2 h-7 w-7 rounded-3xl 
                 
@@ -59,7 +59,7 @@
                 2xl:mx-3 2xl:h-10 2xl:w-10 2xl:rounded-3xl"></li>
 
             <li class="mx-2 sm:mx-2 md:mx-2 lg:mx-3 xl:mx-3
-            2xl:mx-4 "><strong><a href="#home" class="no-underline text-black text-[0.5rem] hover:text-white
+            2xl:mx-4 "><strong><a href="#home" id="homeLink" class="no-underline text-black text-[0.5rem] hover:text-white
                 
                 sm:no-underline sm:text-black sm:text-[0.7rem] sm:hover:text-white
                 
@@ -134,7 +134,7 @@
             
             md:resize-none md:h-10 md:w-28 md:mx-2 md:p-2 md:rounded-lg md:text-black md:font-bold md:focus:bg-slate-300 md:focus:outline-none md:border-2 md:border-black
             
-            lg:resize-none lg:h-10 lg:w-36 lg:mx-2 lg:p-2 lg:rounded-lg lg:text-black lg:font-bold lg:focus:bg-slate-300 lg:focus:outline-none lg:border-2 lg:border-black
+            lg:resize-none lg:h-10 lg:w-40 lg:mx-2 lg:p-2 lg:rounded-lg lg:text-black lg:font-bold lg:focus:bg-slate-300 lg:focus:outline-none lg:border-2 lg:border-black
             
             xl:resize-none xl:h-12 xl:w-48 xl:mx-2 xl:p-2 xl:rounded-lg xl:text-black xl:font-bold xl:focus:bg-slate-300 xl:focus:outline-none xl:border-2 xl:border-black
             
@@ -206,18 +206,20 @@
             </p>
 
             <div class="flex flex-row justify-center items-center" >
+                
+                
 
-                <button class="mx-4 h-12 w-24 text-[0.7rem] bg-white text-black font-bold border-[3px] border-green-600 rounded-lg hover:bg-green-600 hover:border-2 hover:border-white hover:text-white
+                <button id="join" class=" mx-4 h-12 w-24 text-[0.7rem] bg-white text-black font-bold border-[3px] border-green-600 rounded-lg hover:bg-green-600 hover:border-2 hover:border-white hover:text-white
                 
                 sm:mx-1 sm:h-10 sm:w-20 sm:text-[0.7rem] sm:bg-white sm:text-black sm:font-bold sm:border-[3px] sm:border-green-600 sm:rounded-lg sm:hover:bg-green-600 sm:hover:border-2 sm:hover:border-white sm:hover:text-white
                 
-                md:m-5 md:h-12 md:w-24 md:text-[0.7rem] md:bg-white md:text-black md:font-bold md:border-[3px] md:border-green-600 md:rounded-lg md:hover:bg-green-600 md:hover:border-2 md:hover:border-white md:hover:text-white
+                md:mx-5 md:h-12 md:w-24 md:text-[0.7rem] md:bg-white md:text-black md:font-bold md:border-[3px] md:border-green-600 md:rounded-lg md:hover:bg-green-600 md:hover:border-2 md:hover:border-white md:hover:text-white
                 
-                lg:m-5 lg:h-12 lg:w-36 lg:bg-white lg:text-black lg:font-bold lg:border-[3px] lg:border-green-600 lg:rounded-lg lg:hover:bg-green-600 lg:hover:border-2 lg:hover:border-white lg:hover:text-white 
+                lg:mx-5 lg:h-12 lg:w-36 lg:bg-white lg:text-black lg:font-bold lg:border-[3px] lg:border-green-600 lg:rounded-lg lg:hover:bg-green-600 lg:hover:border-2 lg:hover:border-white lg:hover:text-white 
                 
-                xl:m-5 xl:h-12 xl:w-36 xl:bg-white xl:text-black xl:font-bold xl:border-[3px] xl:border-green-600 xl:rounded-lg xl:hover:bg-green-600 xl:hover:border-2 xl:hover:border-white xl:hover:text-white 
+                xl:mx-5 xl:h-12 xl:w-36 xl:bg-white xl:text-black xl:font-bold xl:border-[3px] xl:border-green-600 xl:rounded-lg xl:hover:bg-green-600 xl:hover:border-2 xl:hover:border-white xl:hover:text-white 
                 
-                2xl:m-5 2xl:h-12 2xl:w-36 2xl:bg-white 2xl:text-black 2xl:font-bold 2xl:border-[3px] 2xl:border-green-600 2xl:rounded-lg 2xl:hover:bg-green-600 2xl:hover:border-2 2xl:hover:border-white 2xl:hover:text-white " >
+                2xl:mx-5 2xl:h-12 2xl:w-36 2xl:bg-white 2xl:text-black 2xl:font-bold 2xl:border-[3px] 2xl:border-green-600 2xl:rounded-lg 2xl:hover:bg-green-600 2xl:hover:border-2 2xl:hover:border-white 2xl:hover:text-white " >
                     Join Now
                 </button>
 
@@ -1057,7 +1059,7 @@
         
         2xl:h-28 2xl:w-full 2xl:bg-green-600 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:items-center 2xl:fixed 2xl:bottom-0 ">
 
-            <div class="w-[5rem] flex flex-col justify-start
+            <div id="mainDiv" class="w-[5rem] flex flex-col justify-start 
             
             sm:w-[25rem] sm:flex sm:flex-row sm:justify-start sm:items-center 
             
@@ -1069,7 +1071,8 @@
             
             2xl:w-96 2xl:flex 2xl:flex-row 2xl:justify-start 2xl:items-center " >
 
-                <img src="cheques.jpg" alt="cheques" id="songImage" class=" rounded-lg border-2 border-white
+            <!-- mt-3 dena hai isme -->
+                <img src="cheques.jpg" alt="cheques" id="songImage" class=" h-12 w-12 ml-2 rounded-lg border-2 border-white 
                 
                 sm:h-14 sm:w-14 sm:ml-4 sm:rounded-lg sm:border-2 sm:border-white
                 
@@ -1081,7 +1084,7 @@
                 
                 2xl:h-20 2xl:w-20 2xl:ml-4 2xl:rounded-lg 2xl:border-2 2xl:border-white" >
 
-                <div class="flex flex-col 
+                <div id="textDiv" class="flex flex-col 
                 
                 sm:flex sm:flex-col
                 
@@ -1093,7 +1096,7 @@
                 
                 2xl:flex 2xl:flex-col" >
 
-                    <p id="songName" class="text-black text-sm leading-3 font-bold mt-2
+                    <p id="songName" class="text-black text-sm font-bold ml-2
                     
                     sm:text-black sm:text-lg sm:font-bold sm:ml-3 sm:mt-3
                     
@@ -1105,7 +1108,7 @@
                     
                     2xl:text-black 2xl:text-2xl 2xl:font-bold 2xl:ml-3 2xl:mt-3"  >Cheques</p>
 
-                    <p id="singerName" class="text-black text-xs leading-3
+                    <p id="singerName" class="text-black text-xs ml-2
                     
                     sm:text-black  sm:text-sm sm:font-bold sm:ml-3 sm:-mt-2
                     
@@ -1196,7 +1199,7 @@
                 
                 2xl:w-full 2xl:flex 2xl:justify-center">
                     
-                    <input type="range" name="Audio" id="bar" value="0" min="0" max="100" class="w-[60%] mt-3 hover:cursor-pointer
+                    <input type="range" name="Audio" id="bar" value="0" min="0" max="100" class="w-[60%] mt-6 hover:cursor-pointer
                     
                     sm:w-[100%] sm:mt-3 sm:hover:cursor-pointer sm:mr-10
                     

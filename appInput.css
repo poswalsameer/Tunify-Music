@@ -18,5 +18,36 @@
     #navTextarea{
         display: none;
     }
+
+    #songImage{
+        margin-top: 1.5rem;
+    }
+
+    #songName{
+        margin-top: 0.2rem;
+        /* overflow: scroll; */
+        font-size: 0.8rem;
+    }
+
+    #textDiv{
+        /* border: 1px solid white; */
+        /* height: 5rem; */
+        width: 10rem;
+        overflow: auto;
+    }
+
+    #singerName{
+        margin-top: -1rem;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+
+    #down{
+        margin-top: -0.9rem;
+    }
+
+    #bar{
+        margin-top: 2.5rem;
+    }
     
 }

@@ -432,19 +432,20 @@ yaari.addEventListener('click', ()=> {
 })
 
 music.addEventListener('timeupdate', ()=> {
-    
-    console.log("time is updating");
 
+    console.log("time is updating");
     //updating the audio bar;
 
-    musicTime = parseInt((music.currentTime/music.duration)*100);
+    console.log("above musicTime");
+    let musicTime = parseInt((music.currentTime/music.duration)*100);
+
+    console.log("above value")
     document.getElementById('bar').value = musicTime;
-
 })
-
 audioProgress.addEventListener('change', ()=> {
 
-    music.currentTime = (bar.value*music.duration)/100;
+    console.log("latest log");
+    music.currentTime = (document.getElementById('bar').value * music.duration) / 100;
 
 })
 
